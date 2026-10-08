@@ -1,0 +1,206 @@
+@keyframes slideInFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.experience-card {
+  display: flex;
+  position: relative;
+  margin-left: 30px;
+  padding-bottom: 3rem; /* O padding que causa o desalinhamento visual */
+  opacity: 0;
+  animation: slideInFadeIn 0.6s ease-out forwards;
+}
+
+.experience-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.experience-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.experience-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.experience-card::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 1.5rem); /* << AJUSTE FINO */
+  height: calc(50% + 1.5rem);
+  bottom: 0;
+  width: 3px;
+  background-color: var(--border);
+  transition: background-color 0.3s ease;
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: calc(50% - 1.5rem); /* << AJUSTE FINO */
+  width: 3px;
+  background-color: var(--border);
+  transition: background-color 0.3s ease;
+}
+
+.experience-card:first-child::before {
+  display: none;
+}
+.experience-card:last-child::after {
+  display: none;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -27.5px;
+  top: calc(50% - 1.5rem); /* << AJUSTE FINO */
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--bg-page);
+  border: 3px solid var(--accent);
+  z-index: 1;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.experience-content {
+  background-color: var(--surface);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-container {
+  display: flex;
+  align-items: flex-start; /* Alinha logo e texto verticalmente */
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.role-text {
+  display: flex;
+  flex-direction: column; /* Cargo em cima, empresa abaixo */
+}
+
+.role-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.company-name {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.date-range {
+  margin: 0.25rem 0 1rem 0;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.description-list {
+  padding-left: 20px;
+  margin: 0 0 1rem 0;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.description-list li::marker {
+  color: var(--accent);
+}
+
+.experience-event-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+
+.company-info {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.experience-card:hover .timeline-marker {
+  transform: scale(1.2) translateY(-50%);
+  background-color: var(--accent);
+}
+
+.experience-card:hover::after,
+.experience-card:hover::before {
+  background-color: var(--accent);
+}
+
+.experience-card:hover .experience-content {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-xp-hover);
+}
+
+@media (max-width: 768px) {
+  .experience-content {
+    padding: 1rem;
+  }
+
+  .role-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .date-range,
+  .company-info,
+  .description-list {
+    font-size: 0.85rem;
+  }
+
+  .skills-container {
+    gap: 0.4rem;
+  }
+
+  .skill-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+}

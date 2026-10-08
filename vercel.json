@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/api/wakatime/:path*",
+      "destination": "https://wakatime.com/api/v1/users/43529b87-73e1-4546-a267-d2bf1489e108/:path*"
+    },
+    {
+      "source": "/api/github/profile-views",
+      "destination": "https://komarev.com/ghpvc/?username=gustavoryan-del"
+    },
+    {
+      "source": "/api/github/repo-views",
+      "destination": "https://views-counter.vercel.app/badge"
+    }
+  ]
+}

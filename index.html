@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/aramunilogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gustavo Ryan Gomes Guedes</title>
+    <meta
+      name="description"
+      content="Estudante de Engenharia de Software na PUC Minas. Projetos, experiências e currículo em um terminal interativo."
+    />
+    <meta name="author" content="Gustavo Ryan Gomes Guedes" />
+    <!-- Links com ?cmd= e ?lang= apontam para a mesma página -->
+    <link rel="canonical" href="https://gustavoryan.vercel.app/" />
+
+    <!-- Prévia do link (WhatsApp, LinkedIn, Slack, Telegram...) -->
+    <!-- Os crawlers não rodam JavaScript: as tags precisam estar aqui, no HTML -->
+    <!-- A imagem precisa de URL absoluta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="gustavoryan.vercel.app" />
+    <meta property="og:url" content="https://gustavoryan.vercel.app/" />
+    <meta property="og:title" content="Gustavo Ryan Gomes Guedes · Portfólio Terminal" />
+    <meta
+      property="og:description"
+      content="Estudanye de Engenharia de Software na PUC Minas. Projetos, experiências e currículo em um terminal interativo."
+    />
+    <meta property="og:image" content="https://gustavoryan.vercel.app/portfolio-home.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="3340" />
+    <meta property="og:image:height" content="1662" />
+    <meta
+      property="og:image:alt"
+      content="Tela inicial do portfólio em estilo terminal, com nome, cargos e o prompt visitante@portfolio"
+    />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- X/Twitter: imagem grande; título, descrição e imagem vêm das tags og: -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Aplica o tema salvo antes do React carregar (evita piscar o dark)
+      try {
+        var saved = localStorage.getItem("aramuni-theme");
+        if (saved === "light" || saved === "galo") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
