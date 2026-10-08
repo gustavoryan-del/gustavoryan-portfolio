@@ -379,7 +379,6 @@ O build valida a transformação dos módulos React, CSS e assets. O lint pode r
 * [WakaTime API](https://wakatime.com/developers)
 * [Supabase JavaScript Client](https://supabase.com/docs/reference/javascript/introduction)
 * [EmailJS](https://www.emailjs.com/docs/)
-* [suspicious link removed]
 * [Vercel Functions](https://vercel.com/docs/functions)
 
 ---
