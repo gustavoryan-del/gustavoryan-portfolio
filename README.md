@@ -224,7 +224,7 @@ Todas as variáveis são opcionais para abrir a aplicação.
 ### 📦 Instalação de Dependências
 
 ```bash
-git clone [https://github.com/gustavoryan-del/gustavoryan-portfolio.git](https://github.com/gustavoryan-del/gustavoryan-portfolio.git)
+git clone https://github.com/gustavoryan-del/gustavoryan-portfolio.git
 cd gustavoryan-portfolio
 npm install
 
