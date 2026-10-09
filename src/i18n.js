@@ -119,7 +119,7 @@ const resources = {
             serie: "Favorite show",
             assistindo: "Watching",
           },
-          atleticano: "Atlético Mineiro fan, cheering for",
+          atleticano: "Atlético Mineiro fan, I root for for",
           hobbies: { futsal: "futsal", valorant: "Valorant", xadrez: "chess" },
           passaporte: "Passport stamps",
           passaporte_total: "{{lugares}} destinations · {{continentes}} continents",
