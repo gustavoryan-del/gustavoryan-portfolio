@@ -31,7 +31,7 @@
 
 ## 🔗 Links Úteis
 
-- 🌐 **Demo Online:** Em breve (Deploy pendente)
+- 🌐 **Demo Online:** [https://gustavoryan.vercel.app](https://gustavoryan.vercel.app)
 - 💻 **Repositório:** [gustavoryan-del/gustavoryan-portfolio](https://github.com/gustavoryan-del/gustavoryan-portfolio)
 - 👤 **Perfil do GitHub:** [gustavoryan-del](https://github.com/gustavoryan-del)
 - 🏫 **PUC Minas:** [Portal institucional](https://www.pucminas.br/)
